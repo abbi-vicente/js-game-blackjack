@@ -27,7 +27,6 @@ body {
 	position: fixed;
 	align-self: baseline;
 }
-
 .header h3 a {
 	text-decoration: none;
 	decoration: none;
@@ -35,7 +34,6 @@ body {
 	align-self: flex-end;
 	text-transform: uppercase;
 }
-
 .header h3 a:hover {
 	color: #a2d5ab;
 }
@@ -297,13 +295,11 @@ h2 {
 	height: 100%;
 	background-color: #eee;
 }
-
 .main-box-1,
 .main-box-2 {
 	display: flex;
 	flex-wrap: nowrap;
 }
-
 .box-1 img,
 .box-2 img,
 .box-3 img,
