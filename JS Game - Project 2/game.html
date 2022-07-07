@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="game.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="icon" href="data:;base64,iVBORwOKGO=" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+		<title>Black Jack</title>
+	</head>
+	<body>
+		<h1>Blackjack</h1>
+		<main>
+			<div id="rules">
+				<h3>THE GAME</h3>
+				<ol>
+					<h4>Aim</h4>
+						<p>Finish the game with a higher total than the dealer, without exceeding 21. You automatically lose if you go beyond 21.</p></br>
+					<h4>How to Play</h4>
+						<li>We use a 52-card deck. 
+							<ul>
+								<li>Number cards (2-10) score the value indicated on them.</li>
+								<li>The face cards (Jack, Queen, King) score 10 points.</li>
+								<li>Ace can either be 1 or 11, depending on what helps you the most.</li>
+							</ul>
+						</li></br>
+						<li>The dealer will have one card facing down.</li></br>
+						<li>Draw as many cards as you want by clicking "Hit" as long as you haven't exceeded 21.</li></br>
+						<li>Click "Stay" if you don't wish to draw more cards.</li></br>
+						<li>The dealer will now reveal the faced-down card letting you know based on your totals if you've won or not.</li></br>
+						<li>Good luck!</li></br>
+					</ol>
+			</div>		
+			<div id="game">
+				<div id="dealer-box">
+					<h2>Dealer: <span id="dealer-sum">?</span></h2>	
+						<div id="dealer-cards">
+							<img id="hidden" src="img/cards/BACK.png">
+						</div>
+				</div>
+				<span id="dealer-message">Let's Play!</span></br>
+				<div id="your-box">	
+				<h2>You: <span id="your-sum">0</span></h2>
+					<div id="your-cards"></div>
+				</div>
+					<button id="hit">Hit</button>
+					<button id="stay">Stay</button>
+					<button id="deal">Deal</button>
+					<p id="results"></p>
+			</div>
+		</main>
+	</body>
+	<script src="game.js"></script>
+</html>
