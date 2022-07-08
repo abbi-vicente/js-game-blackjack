@@ -81,3 +81,82 @@ button:hover,
 	border-radius: 32px;
 	color: black;
 }
+
+/* mobile responsiveness */
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+	main {
+		display: flex;
+		flex-direction: column;
+	}
+	#game {
+		display: flex;
+		flex-direction: column;
+		margin-left: 16vh;
+	}
+	img {
+		height: 15vh;
+		width: 12vh;
+		margin: 0.5vh;
+		border-radius: 1.5vh;
+	}
+	#hit,
+	#stay,
+	#deal {
+		width: 20vw;
+		height: 10vh;
+		font-size: 3.5vh;
+		margin: 5vh 0 5vh 0;
+	}
+	#your-cards,
+	#dealer-cards {
+		display: flex;
+		flex-direction: row;
+	}
+	h2 {
+		font-size: 3.5vh;
+	}
+	h3 {
+		font-size: 6vh;
+	}
+	h4 {
+		font-size: 5vh;
+	}
+	#rules {
+		font-size: 3vh;
+	}
+	#dealer-message {
+		font-size: 3.1vh;
+	}
+	.buttons {
+		margin-right: 3vh;
+	}
+}
+
+/* tablet */
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+	#hit,
+	#stay,
+	#deal {
+		width: 12vw;
+		height: 10vh;
+		font-size: 3.5vh;
+		margin: 3vh 0 5vh 0;
+	}
+	h1 {
+		margin: 5px;
+		font-size: 8vh;
+	}
+	#rules,
+	#game {
+		margin-top: 0;
+	}
+	h2 {
+		font-size: 3vh;
+	}
+	h3 {
+		font-size: 5vh;
+	}
+	h4 {
+		font-size: 4vh;
+	}
+}
